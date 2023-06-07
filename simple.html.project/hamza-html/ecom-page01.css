@@ -380,7 +380,7 @@
     }
 
     @media (max-width: 700px) {
-      .row, .container {   
+      .row, .container {
         flex-direction: column;
       }
     }
