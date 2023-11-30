@@ -8,7 +8,7 @@
 
 .header{
     margin-top: auto;
-    height: 100%;
+    height: auto;
     background-image: url(images/banner1.jpg);
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),url(images/banner1.jpg));
     width: auto;
@@ -284,4 +284,34 @@ h1{
 {
     text-align: center;
 }
+
+.starry-background {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.starry-background::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow:
+            1000px 1000px white,
+            950px 1100px white,
+            900px 1200px white,
+            850px 1300px white,
+    /* Add more points to create more stars */
+;
+    top: 0;
+    left: 0;
+}
+
+.rating .fa {
+    color: #ffdd00; /* Gold color for stars */
+}
+
 
